@@ -1,0 +1,22 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the Header */
+.header {
+    background-color: #F2A5E8; /* Green background */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Add some padding (top and bottom) */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.header h2 {
+    font-size: 2rem; /* Adjust the font size */
+    font-weight: bold; /* Make it bold */
+    letter-spacing: 1px; /* Add some letter spacing */
+}

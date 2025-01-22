@@ -1,0 +1,84 @@
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: #007BFF;
+  }
+  
+  input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 10px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007BFF;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004494;
+  }
+  
+  button:last-child {
+    background-color: #dc3545;
+  }
+  
+  button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  button:last-child:active {
+    background-color: #a71d2a;
+  }
+  
