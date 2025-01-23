@@ -11,5 +11,7 @@ const todoSchema = new mongoose.Schema({
     }
 })
 
+// filename, and variable name are assigned to Todo inorder to easily export
 const Todo = mongoose.model('to_do_list', todoSchema)
 module.exports = Todo
+

@@ -32,6 +32,7 @@ export default function AddTodo()
 
             if(response.data.success === 'created')
             {
+                // after giving the message it will send to backend it will automatically refresh
                  window.location.reload();
             }
         }

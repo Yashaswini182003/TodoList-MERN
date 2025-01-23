@@ -70,6 +70,8 @@ const updateToDo = async(req, res) => {
             {
                 message: req.body.message,
             },
+            
+            // { new: true }: This option tells Mongoose to return the updated document instead of the old one.
             {new: true}
         );
 

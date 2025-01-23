@@ -9,6 +9,7 @@ const to_do_listRouter = express.Router();
 // delete-> delete
 
 // 'http://localhost:3000/getall'
+// getall = getAllToDo using getall path we can give in frontend so, that we it can directly prompt to getAllToDo function in backend
 to_do_listRouter.get('/getall', getAllToDo)
 to_do_listRouter.post('/', createToDo)
 to_do_listRouter.put('/updateToDo/:id', updateToDo)

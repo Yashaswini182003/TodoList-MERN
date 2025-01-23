@@ -23,6 +23,7 @@ const TodoList = () => {
         catch (error)
         {
             console.log(error);
+            console.log(error)
         }
     };
 
@@ -40,6 +41,7 @@ const TodoList = () => {
             if(result.data.success === 'deleted')
             {
                 toast.success('Todo deleted successfully!');
+                // calling the get function 
                 getAllTodos();
             }
             
@@ -108,7 +110,10 @@ const TodoList = () => {
     };
 
     return (
+        // here 
         <div>
+
+
           {isEditing ? (
             <div>
                 <input type="text" value={currentTodo.message} onChange={handleEditInputChange}/>
