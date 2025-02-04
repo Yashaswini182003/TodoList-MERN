@@ -17,7 +17,7 @@ const TodoList = () => {
     const getAllTodos = async () => {
         try
         {
-           const response = await axios.get(`${process.meta.env.BACKEND_URL}/todolist/getall`);
+           const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/todolist/getall`);
            setTodos(response.data.data); 
         } 
         catch (error)
@@ -37,7 +37,7 @@ const TodoList = () => {
     const handleDelete = async (id) => {
         try
         {
-            const result = await axios.delete(`${process.meta.env.BACKEND_URL}/todolist/deleteToDo/${id}`);
+            const result = await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/todolist/deleteToDo/${id}`);
             if(result.data.success === 'deleted')
             {
                 toast.success('Todo deleted successfully!');
@@ -83,7 +83,7 @@ const TodoList = () => {
 
         try
         {
-            const result = await axios.put(`${process.meta.env.BACKEND_URL}/todolist/updateToDo/${currentTodo._id}`, {
+            const result = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/todolist/updateToDo/${currentTodo._id}`, {
                 message: currentTodo.message
             });
 

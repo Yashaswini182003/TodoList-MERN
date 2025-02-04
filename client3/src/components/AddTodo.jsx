@@ -26,7 +26,7 @@ export default function AddTodo()
 
         try 
         {
-            const response = await axios.post(`${process.meta.env.BACKEND_URL}/todolist/`, {
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/todolist/`, {
                 message: message,
             });
 
