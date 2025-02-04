@@ -10,10 +10,8 @@ const app = express()
 const port = process.env.PORT || 5000;
 
 
-
 // connect the mongodb database , it will point to Runserver = require('./database/connection'); after that it will call the connection.js file and it will execute the function Runserver() => then try catch block
 RunServer()
-
 
 
 app.use(express.json());
